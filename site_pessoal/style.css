@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Special+Gothic+Expanded+One&display=swap');
+
+
+/*CSS de RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+    color: #f6f6f6;
+    overflow: hidden;
+}
+
+.conteudo_principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+h1 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    max-width: 500px;
+}
+
+strong {
+    color: #0066FF;
+}
+
+.apresentacao_botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao_botoes_links {
+    background-color: #22d4fd;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 18px 0;
+}
