@@ -25,3 +25,13 @@ body {
     text-decoration: none;
     display: block;
 }
+
+.content {
+    margin-left: 220px;
+    padding: 25px;
+    width: 100%;
+}
+
+form label {
+    display: block;
+}
