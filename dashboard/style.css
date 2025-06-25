@@ -2,22 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
     display: flex;
+    min-height: 100vh;
+    background-color: #f5f5f5;
 }
 
 .sidebar {
     width: 200px;
     background-color: #222;
     color: white;
-    height: 100vh;
+    padding: 20px;
     position: fixed;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
 }
 
 .sidebar ul {
     list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
 }
 
 .sidebar a {
@@ -26,12 +38,59 @@ body {
     display: block;
 }
 
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
 .content {
     margin-left: 220px;
-    padding: 25px;
+    padding: 30px;
     width: 100%;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 700px;
 }
 
 form label {
     display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+form button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+form button:hover {
+    background-color: #004d99;
+}
+
+.erro {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -8px;
+    margin-bottom: 10px;
 }
