@@ -1,4 +1,8 @@
 
+function clicar(){
+    console.log("clicou em home");
+}
+
 const rotear = nomeRota => {
     switch (nomeRota) {
         case "home":
