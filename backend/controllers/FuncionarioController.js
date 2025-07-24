@@ -3,7 +3,7 @@ import FuncionarioRepository from "../repositories/FuncioncionarioRepository.js"
 const FuncionarioController = {
     async getAll(req, res) {
         try {
-            const funcionarios = FuncionarioRepository.findAll();
+            const funcionarios = await FuncionarioRepository.findAll();
             res.json(funcionarios);
         }catch(err){
             res.status(500).json({erro : "Erro na busca de funcionários", err})
